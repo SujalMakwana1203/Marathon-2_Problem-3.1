@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<style>
+    body{
+        background-image: url('introduction.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .userQue{
+        background-color: rgba(255, 255, 255, 0.363);
+        border: 1px solid black;
+        margin-left: 370px; 
+        margin-right: 370px; 
+        margin-top: 40px; 
+        padding: 20px;
+        padding-bottom: 60px;
+        font-size: 20px;
+        box-shadow: 2px 2px 5px black;
+    }
+    input{
+        padding: 10px;
+        margin: 5px;
+        background-color: rgba(255, 255, 255, 0);
+        font-size: 17px;
+    }
+    button{
+        background-color: rgba(255, 255, 255, 0);
+        border: 2px solid gray;
+        width: 120px;
+        height: 40px;
+        cursor: pointer;
+        float: right;
+        font-size: larger;
+    }
+    p{
+
+        font-size: 30px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="userQue">
+        <div style="border: 1px solid black; margin: 5px;"><p>Welcome <span id="userName"></span></p>  
+            <p>Quiz Of <span id="quiz"></span></p></div>
+        Q - 1<input id="queOne" style="width: 450px;" type="text" placeholder="Question"><br>
+        A -  <input id="opt1" style="border-radius: 10px;" type="text" placeholder="Option 1"><br>
+        B -  <input id="opt2" style="border-radius: 10px;" type="text" placeholder="Option 2"><br>
+        C -  <input id="opt3" style="border-radius: 10px;" type="text" placeholder="Option 3"><br>
+        D -  <input id="opt4" style="border-radius: 10px;" type="text" placeholder="Option 4"><br>
+        Correct Ans -  <input style="border-radius: 10px;" type="text" placeholder="Ans"><br>
+        <a href="usershow.html">
+        <button onclick="showdata()">Next</button></a>
+    </div>
+    <script src="user.js"></script>
+</body>
+</html>

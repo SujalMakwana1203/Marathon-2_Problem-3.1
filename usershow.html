@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<style>
+     body{
+        background-image: url('introduction.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .showQA{
+        background-color: rgba(255, 255, 255, 0.363);
+        border: 1px solid black;
+        margin-left: 370px; 
+        margin-right: 370px; 
+        margin-top: 40px; 
+        padding: 20px;
+        padding-bottom: 60px;
+        font-size: 20px;
+        box-shadow: 2px 2px 5px black;
+    }
+    input{
+        padding: 10px;
+        margin: 5px;
+        background-color: rgba(255, 255, 255, 0);
+        font-size: 17px;
+    }
+    button{
+        background-color: rgba(255, 255, 255, 0);
+        border: 2px solid gray;
+        width: 120px;
+        height: 40px;
+        cursor: pointer;
+        float: right;
+        font-size: larger;
+    }
+    p{
+
+        font-size: 30px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="showQA">
+        <span>Q-1</span> <span id="showQue"></span> <br><br>
+        <input type="radio"><span id="Opt1"></span> <br><br>
+        <input type="radio"><span id="Opt2"></span> <br><br>
+        <input type="radio"><span id="Opt3"></span> <br><br>
+        <input type="radio"><span id="Opt4"></span> <br><br>
+    </div>
+    <script src="user.js"></script>
+</body>
+</html>
